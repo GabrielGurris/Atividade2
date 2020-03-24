@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+</head>
+<body>
+    <h1>CARROS</h1>
+    <table>
+        <tr th:each="carro: ${carros}">
+            <td th:text="${carro?.id}"></td>
+            <td th:text="${carro?.marca}"></td>
+            <td th:text="${carro?.modelo}"></td>
+            <td th:text="${carro?.ano}"></td>
+            <td th:text="${carro?.km}"></td>
+            <td th:text="${carro?.combustivel}"></td>
+            <td th:text="${carro?.preco}"></td>
+        </tr>
+    </table>
+</body>
+</html>
